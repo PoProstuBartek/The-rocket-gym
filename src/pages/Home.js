@@ -9,6 +9,7 @@ const Home = () => {
   const [exercises, setExercises] = useState([]);
   const [bodyPart, setBodyPart] = useState('all');
 
+  console.log(bodyPart);
   return (
     <Box>
       <HeroBaner />
@@ -18,9 +19,9 @@ const Home = () => {
         setBodyPart={setBodyPart}
       />
       <Exercises 
-        setExercises={setExercises}
+        exercises={exercises}
         bodyPart={bodyPart}
-        setBodyPart={setBodyPart}
+        setExercises={setExercises}
       />
     </Box>
   )
